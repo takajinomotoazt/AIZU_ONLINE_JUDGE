@@ -2,10 +2,10 @@
 
 using namespace std;
 
-void insertion_sort(int data[], size_t n) {
-    for (size_t i = 1; i < n; i++) {
+void insertion_sort(int data[], int n) {
+    for (int i = 1; i < n; i++) {
         if (data[i - 1] > data[i]) {
-            size_t j = i;
+            int j = i;
             int tmp = data[i];
             do {
                 data[j] = data[j - 1];
